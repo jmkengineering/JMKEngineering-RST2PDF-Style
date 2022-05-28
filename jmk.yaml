@@ -1,0 +1,76 @@
+# This is the standard/template style for JMK Engineering Reports. I am only changing the parts that make the documents look "good" as I go.
+# Rev 0
+# Date: 2022-03-19
+#
+# Revision History
+#
+# 0 - Initial version that is good enough to send to clients
+
+pageSetup:
+  size: Letter
+  spacing-header: 10mm
+  spacing-footer: 10mm
+  margin-top: 1cm
+  margin-bottom: 1cm
+  margin-left: 2.5cm
+  margin-right: 2.5cm
+
+fontsAlias:
+  stdFont: calibri
+  headingFont: Helvetica-Bold
+
+styles:
+  normal:
+    parent: base
+    fontSize: 11
+    fontName: stdFont
+  heading:
+    parent: normal
+    fontName: headingFont
+    fontSize: 20
+    textColor: 17365D
+  heading1:
+    parent: heading
+    fontSize: 18
+  heading2:
+    parent: heading
+    fontSize: 16
+  heading3:
+    parent: heading
+    fontSize: 16
+  heading4:
+    parent: heading
+    fontSize: 14
+  heading5:
+    parent: heading
+    fontSize: 12
+
+  title:
+    parent: heading
+    fontSize: 30
+  txtheader:
+    parent: heading
+
+
+  headertable:
+    borderWidth: 1
+    borderColor: red
+    parent: heading
+    align: center
+  headerlogor:
+    align: center
+  headerlogol:
+    valign: middle
+  item-list:
+# Added some space after a bulleted list to make things a bit cleaner
+    spaceAfter: 10pt
+    colWidths:
+# The defualt is 20, but that only allows single digit numbers 
+    - 30pt 
+# I left this as null
+    - null
+  bullet-list:
+# Added some space after a bulleted list to make things a bit cleaner
+    spaceBefore: 0
+    spaceAfter: 10pt
+
